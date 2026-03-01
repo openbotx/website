@@ -1,0 +1,423 @@
+{% extends "layouts/base.html" %}
+
+{% set page_title_simple = true %}
+{% set page_title = "OpenBotX — Open-source AI Agent Orchestration Platform" %}
+{% set page_description = "OpenBotX is an open-source platform for orchestrating AI agents — manage, coordinate, and monitor multiple intelligent agents with security, visibility, and control." %}
+{% set page_keywords = "openbotx, ai agents, ai orchestration, open source, automation, multi-agent platform, artificial intelligence, agent management" %}
+
+{% block content %}
+<main>
+    <!-- hero -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="hero-title">OpenBotX</h1>
+                <p class="hero-subtitle">
+                    An open-source platform for orchestrating AI agents — manage, coordinate, and monitor multiple intelligent agents with security, visibility, and control.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-4">
+                    <a href="https://github.com/openbotx/openbotx" class="btn btn-primary btn-lg px-4"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github me-2"></i>Explore on GitHub
+                    </a>
+                    <a href="https://openbotx-marketplace.pages.dev" class="btn btn-outline-light btn-lg px-4"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-shop me-2"></i>Skills Marketplace
+                    </a>
+                </div>
+                <div class="hero-links d-flex gap-4 justify-content-center">
+                    <a href="https://x.com/openbotx" target="_blank" rel="noopener noreferrer">
+                        Follow @openbotx
+                    </a>
+                    <a href="https://x.com/paulocoutinhox" target="_blank" rel="noopener noreferrer">
+                        Follow @paulocoutinhox
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="section-block section-bordered">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">What is OpenBotX</h2>
+                    <p class="section-lead mb-4">
+                        A structured AI orchestration platform built to manage, coordinate, and monitor multiple intelligent agents in a secure and organized way — designed from the ground up with production environments in mind.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center mt-2">
+                <div class="col-md-6">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-shield-lock"></i></div>
+                        <h3>Security-First Architecture</h3>
+                        <p>Each agent runs inside an isolated workspace with sandbox restrictions, limiting file access and tool permissions. Controlled and predictable by design.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-terminal"></i></div>
+                        <h3>Simple Installation</h3>
+                        <p>No complex infrastructure, no broken dependencies, no heavy configuration. A simple installation process designed to work without headaches.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-speedometer2"></i></div>
+                        <h3>Real-Time Web Dashboard</h3>
+                        <p>A complete production-ready dashboard to manage agents, monitor tasks, track logs, and control executions — accessible from desktop, tablet, and mobile.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-diagram-3"></i></div>
+                        <h3>Agent Orchestrator</h3>
+                        <p>Not just another AI agent — a structured orchestrator that manages multiple agents, each capable of spawning subagents with tiered tool access and permission isolation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- capabilities -->
+    <section id="capabilities" class="section-block section-alt section-bordered">
+        <div class="container">
+            <h2 class="section-title text-center">Key Capabilities</h2>
+            <p class="section-subtitle text-center mb-5">Production-ready features built for real-world deployment.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-graph-up"></i></div>
+                        <h3>Real-Time Dashboard</h3>
+                        <p>See everything happening in real time — manage agents, monitor tasks, control executions, track logs, and inspect error traces.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-kanban"></i></div>
+                        <h3>Kanban-Style Board</h3>
+                        <p>Track in real time what each agent is doing with a visual Kanban board — structured task management with full transparency.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-shield-check"></i></div>
+                        <h3>Sandboxed Workspaces</h3>
+                        <p>Each agent operates inside an isolated workspace with sandbox restrictions and tiered tool permissions, preventing uncontrolled behavior.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-lightning"></i></div>
+                        <h3>Real-Time Skill Editing</h3>
+                        <p>Add and edit skills directly through the web dashboard — no restarts, no manual file editing, no environment conflicts.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-broadcast"></i></div>
+                        <h3>Multi-Channel Support</h3>
+                        <p>Built-in web chat and native Telegram support with text, audio, and images — using the same processing pipeline.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-diagram-3"></i></div>
+                        <h3>Hierarchical Agents</h3>
+                        <p>Agents can spawn and manage subagents with tiered access levels — a scalable and structured architecture for complex workflows.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-folder2-open"></i></div>
+                        <h3>Integrated File Browser</h3>
+                        <p>Native file browser inside the web panel with public and private file separation — all operations within sandboxed environments.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-arrow-left-right"></i></div>
+                        <h3>Multi-Provider LLM</h3>
+                        <p>Support for Anthropic, OpenAI, and Google services with flexible model configuration and prompt caching for reduced latency.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-chat-square-text"></i></div>
+                        <h3>Independent Web Chat</h3>
+                        <p>Built-in web chat that does not depend on external applications — supports text, audio, and images with full communication control.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-signpost-split"></i></div>
+                        <h3>Agent-to-Agent Routing</h3>
+                        <p>Intelligent message routing between agents with contextual continuity — enabling structured collaboration between specialized LLM instances.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-sliders"></i></div>
+                        <h3>Visual Config Editor</h3>
+                        <p>Visual configuration editing with YAML validation — making advanced configuration safer and easier without breaking the system.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-database"></i></div>
+                        <h3>Memory & Continuity</h3>
+                        <p>Persistent memory and session handling that keeps context across interactions — providing continuity across conversations and tasks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- built-in tools -->
+    <section id="tools" class="section-block section-bordered">
+        <div class="container">
+            <h2 class="section-title text-center">Built-in Tools</h2>
+            <p class="section-subtitle text-center mb-5">A native Python tools system that transforms OpenBotX into a programmable AI automation platform.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-file-earmark-code"></i></div>
+                        <h3>File Operations</h3>
+                        <p>Sandboxed read, write, and file management with public and private separation — safe access without system exposure.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-terminal"></i></div>
+                        <h3>Shell Execution</h3>
+                        <p>Secure shell access with safety protections and controlled permissions for running system commands.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-globe2"></i></div>
+                        <h3>HTTP Requests</h3>
+                        <p>Full HTTP support including GET, POST, and custom headers — enabling direct integration with external APIs and services.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-search"></i></div>
+                        <h3>Web Search & Fetch</h3>
+                        <p>Search the web and fetch content directly from agents — bringing real-time external information into workflows.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-window-desktop"></i></div>
+                        <h3>Browser Automation</h3>
+                        <p>Chrome/CDP integration for controlled interaction with web environments — secure browser automation built into the platform.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-image"></i></div>
+                        <h3>Image Generation</h3>
+                        <p>Generate images directly from agent conversations — integrated visual content creation as part of the workflow.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-rss"></i></div>
+                        <h3>RSS Feeds</h3>
+                        <p>Monitor and consume RSS feeds as part of automated workflows — keeping agents updated with external content sources.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-calendar-check"></i></div>
+                        <h3>Scheduling & Cron</h3>
+                        <p>Cron-based task scheduling for recurring automations — set up processes that run on your schedule without manual intervention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- audience -->
+    <section id="audience" class="section-block section-alt section-bordered">
+        <div class="container">
+            <h2 class="section-title text-center">Who It's For</h2>
+            <p class="section-subtitle text-center mb-5">Built for anyone who wants to orchestrate AI agents — developers and non-developers alike.</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-code-slash"></i></div>
+                        <h3>Developers & Engineers</h3>
+                        <p>Extend the platform with custom tools, build integrations, and leverage the native Python tools system for advanced automation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-person-workspace"></i></div>
+                        <h3>Non-Technical Users</h3>
+                        <p>Manage and monitor agents through the fully responsive web panel — no coding required, no agent architecture knowledge needed.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-people"></i></div>
+                        <h3>Teams & Organizations</h3>
+                        <p>Coordinate multiple agents across your team with structured workflows, visibility into every execution, and centralized control.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-gear"></i></div>
+                        <h3>Automation Enthusiasts</h3>
+                        <p>Design, schedule, and monitor automated processes with cron support, persistent memory, and intelligent agent-to-agent routing.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card-item">
+                        <div class="icon-box"><i class="bi bi-building"></i></div>
+                        <h3>Production Environments</h3>
+                        <p>Designed from the ground up for real deployment — security, isolation, governance, and operational transparency built in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- why -->
+    <section id="why" class="section-block section-bordered">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title text-center">Why OpenBotX</h2>
+                    <p class="section-subtitle text-center mb-5">What makes OpenBotX different.</p>
+                    <div class="principles-list">
+                        <div class="principle-item">
+                            <div class="icon-box"><i class="bi bi-shield-lock"></i></div>
+                            <div>
+                                <h3>Security as a Priority</h3>
+                                <p>No unnecessary port exposure, no uncontrolled connections. Sandboxed agent isolation with tiered tool permissions and structured execution.</p>
+                            </div>
+                        </div>
+                        <div class="principle-item">
+                            <div class="icon-box"><i class="bi bi-rocket-takeoff"></i></div>
+                            <div>
+                                <h3>Simple to Install and Use</h3>
+                                <p>No complex infrastructure, no broken dependencies, no environment conflicts. A simple installation process designed to work without headaches.</p>
+                            </div>
+                        </div>
+                        <div class="principle-item">
+                            <div class="icon-box"><i class="bi bi-people"></i></div>
+                            <div>
+                                <h3>Not Just for Developers</h3>
+                                <p>A fully responsive web panel for desktop, tablet, and mobile. Visual configuration editing with YAML validation. Anyone can manage the system.</p>
+                            </div>
+                        </div>
+                        <div class="principle-item">
+                            <div class="icon-box"><i class="bi bi-diagram-3"></i></div>
+                            <div>
+                                <h3>Structured Orchestration</h3>
+                                <p>Not a standalone experimental agent. A structured, organized system that manages multiple agents with hierarchical architecture, intelligent routing, and contextual continuity.</p>
+                            </div>
+                        </div>
+                        <div class="principle-item">
+                            <div class="icon-box"><i class="bi bi-check-circle"></i></div>
+                            <div>
+                                <h3>Production-Ready</h3>
+                                <p>Built for real deployment — prioritizing security, usability, visibility, and real-world readiness. Not an experiment, a mature platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- community -->
+    <section id="community" class="section-block section-alt section-bordered">
+        <div class="container">
+            <h2 class="section-title text-center">Community</h2>
+            <p class="section-subtitle text-center mb-5">
+                Join discussions, share ideas, contribute, and help shape OpenBotX.
+            </p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/openbotx/openbotx" class="community-card" target="_blank" rel="noopener noreferrer">
+                        <div class="icon-box"><i class="bi bi-github"></i></div>
+                        <h3>GitHub</h3>
+                        <p>Explore the source code, report issues, and contribute to the project.</p>
+                        <span class="community-card-arrow"><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/openbotx/openbotx/discussions" class="community-card" target="_blank" rel="noopener noreferrer">
+                        <div class="icon-box"><i class="bi bi-chat-dots"></i></div>
+                        <h3>Discussions</h3>
+                        <p>Ask questions, propose features, and collaborate on ideas.</p>
+                        <span class="community-card-arrow"><i class="bi bi-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex gap-3 justify-content-center mt-4">
+                <a href="https://x.com/openbotx" class="hero-links-inline" target="_blank" rel="noopener noreferrer">
+                    Follow @openbotx
+                </a>
+                <a href="https://x.com/paulocoutinhox" class="hero-links-inline" target="_blank" rel="noopener noreferrer">
+                    Follow @paulocoutinhox
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- open source -->
+    <section id="open-source" class="section-block section-bordered">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">Open Source</h2>
+                    <p class="section-lead mb-4">
+                        OpenBotX is fully open-source and MIT-licensed. Contributions, feedback, and collaboration are welcome. Transparency is at the core of everything we build.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                        <a href="https://github.com/openbotx/openbotx" class="btn btn-light btn-lg px-4"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github me-2"></i>GitHub Repository
+                        </a>
+                        <a href="https://github.com/openbotx/openbotx/issues" class="btn btn-outline-light btn-lg px-4"
+                            target="_blank" rel="noopener noreferrer">
+                            Issues
+                        </a>
+                        <a href="https://github.com/openbotx/openbotx/discussions" class="btn btn-outline-light btn-lg px-4"
+                            target="_blank" rel="noopener noreferrer">
+                            Discussions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- final cta -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="cta-title">Be part of OpenBotX</h2>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mt-4">
+                        <a href="https://github.com/openbotx/openbotx" class="btn btn-primary btn-lg px-4"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github me-2"></i>Explore on GitHub
+                        </a>
+                        <a href="https://openbotx-marketplace.pages.dev" class="btn btn-outline-light btn-lg px-4"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-shop me-2"></i>Skills Marketplace
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
