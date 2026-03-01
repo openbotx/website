@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://openbotx.ai" target="_blank" rel="noopener noreferrer">
-        <img width="180" src="files/images/logo.png" alt="OpenBotX Logo">
+        <img width="180" src="extras/images/logo.png" alt="OpenBotX Logo">
     </a>
     <br>
     <br>
